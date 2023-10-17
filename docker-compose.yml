@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  folderstructureapp:
+    image: folderstructureapp
+    container_name: folderstructureapp
+    ports: 
+      - "3000:3000"
+    networks:
+      - mynet  
+    volumes: 
+      - folderstructureapp_data:/usr/share/folderstructureapp/data
+networks:
+  mynet:
+    driver: bridge      
+volumes:
+  folderstructureapp_data:
