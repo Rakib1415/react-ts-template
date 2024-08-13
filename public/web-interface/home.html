@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .title {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .header .support {
+            font-size: 14px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .support img {
+            width: 40px;
+            margin-right: 8px;
+            
+        }
+
+        .header .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <a href="https://www.uef.fi/en/unit/school-of-computing" style="text-decoration: none; color: inherit;">
+            <span>// School of Computing</span>
+        </a>
+        </div>
+        <div class="title"></div>
+        <img src="/web-interface/icon/uef_logo.png" alt="Logo" class="logo"/>
+
+
+        <div class="support">
+            <img src="/web-interface/icon/email.png" alt="Support Icon"/>
+            <a href="mailto:servicedesk@uef.fi" style="text-decoration: none; color: inherit;">
+                <span>Support</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+
+import Header from './components/header/Header'
+import Login from './pages/login/Login'
+
 function App() {
-    return <h1>Hello World</h1>
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Login />} />
+            </Routes>
+        </Router>
+    )
 }
 
 export default App

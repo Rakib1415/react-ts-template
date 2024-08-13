@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .title {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .header .support {
+            font-size: 14px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .support img {
+            width: 40px;
+            margin-right: 8px;
+            
+        }
+
+        .header .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 52px); /* Adjusted for header height */
+        }
+
+        .login-box {
+            border: 2px solid #00a9ce;
+            border-radius: 10px;
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .login-box a {
+            display: block;
+            margin: 10px 0;
+           text-decoration: none;
+        }
+
+        .login-box a:link, .login-box a:visited, .login-box a:hover, .login-box a:active {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        .login-box img {
+            width: 100px;
+            margin-bottom: 30px;
+        }
+
+        .login-box button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-box .haka-login {
+            background-color: #a3083d;
+        }
+
+        .login-box .microsoft-login {
+            background-color: #000;
+        }
+
+        .login-box .microsoft-login img {
+            width: 20px;
+            margin-right: 10px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <a href="https://www.uef.fi/en/unit/school-of-computing" style="text-decoration: none; color: inherit;">
+            <span>// School of Computing</span>
+        </a>
+        </div>
+        <div class="title"></div>
+        <img src="/web-interface/icon/uef_logo.png" alt="Logo" class="logo"/>
+
+
+        <div class="support">
+            <img src="/web-interface/icon/email.png" alt="Support Icon"/>
+            <a href="mailto:servicedesk@uef.fi" style="text-decoration: none; color: inherit;">
+                <span>Support</span>
+            </a>
+        </div>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+
+            <a href="https://haka-rr03.funet.fi/haka/">
+                <button class="haka-login">Haka Login</button>
+            </a>
+
+
+            <a href="https://account.microsoft.com/account/Account">
+            <button class="microsoft-login">
+                <img src="/web-interface/icon/microsoft.png" alt="Microsoft Logo"/>
+                Sign in with Microsoft
+            </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

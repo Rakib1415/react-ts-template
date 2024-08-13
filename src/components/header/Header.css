@@ -1,0 +1,32 @@
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.header .support {
+    font-size: 14px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header .support img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+}
